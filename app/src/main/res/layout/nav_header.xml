@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:padding="24dp">
+
+    <!-- Ícono de la app -->
+    <ImageView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/icon_download"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Nombre de la app -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descargador Pro"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Subtítulo -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Música y Video sin límites"
+        android:textColor="#CCffffff"
+        android:textSize="13sp"
+        android:layout_marginTop="2dp" />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Descargador Pro</string>
+    <string name="nav_open">Abrir menú</string>
+    <string name="nav_close">Cerrar menú</string>
+    <string name="descargador_pro">Descargador Pro</string>
+    <string name="descargador_de_m_sica_y_video">Descargador de Música y Video</string>
+    <string name="descarga_tus_contenidos_favoritos_de_forma_r_pida">Descarga tus contenidos favoritos de forma rápida</string>
+    <string name="abrir_reproductor_musical">🎵 Abrir Reproductor Musical</string>
+    <string name="pega_el_enlace_del_video_o_m_sica">Pega el enlace del video o música:</string>
+    <string name="https_www_youtube_com_watch_v">https://www.youtube.com/watch?v=...</string>
+    <string name="calidad_del_video">Calidad del video:</string>
+    <string name="listo">Listo</string>
+    <string name="btn_descargar_ahora">Descargar Ahora</string>
+    <string name="btn_actualizar_yt_dlp">Actualizar yt-dlp (Solucionar errores)</string>
+</resources>

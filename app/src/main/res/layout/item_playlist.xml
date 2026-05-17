@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="center_vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/playlistItemIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/bg_thumbnail_placeholder"
+        android:padding="8dp"
+        android:src="@drawable/ic_music_placeholder" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/playlistItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre de la canción"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/playlistItemArtist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descargador Pro"
+            android:textColor="#B3FFFFFF"
+            android:textSize="12sp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/playingIndicator"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/ic_play"
+        android:visibility="invisible"
+        android:layout_marginStart="8dp"/>
+
+</LinearLayout>
