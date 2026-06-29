@@ -1,5 +1,7 @@
 package com.example.descargadorpro;
 
+import static com.example.descargadorpro.R.*;
+
 import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private ActionBarDrawerToggle drawerToggle;
-
+    private  MusicBoxLibraryAdapter adapter;
     // Controles de descarga
     private TextInputEditText urlInput;
     private Spinner qualitySpinner;
@@ -97,6 +99,8 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(this, PlayerActivity.class);
                 intent.putExtra("FILE_PATH", "PLAYLIST_MODE");
                 startActivity(intent);
+            } else if (id == R.id.nav_musicbox) {
+                startActivity(new Intent(this, MusicBoxActivity.class));
             } else if (id == R.id.nav_settings) {
                 startActivity(new Intent(this, SettingsActivity.class));
             }
@@ -116,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
         setupQualitySpinner();
         checkPermissions();
         initYoutubeDL();
+    //
 
         btnDownload.setOnClickListener(v -> startDownload());
         btnUpdate.setOnClickListener(v -> updateYoutubeDL());

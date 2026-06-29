@@ -48,6 +48,11 @@
             android:exported="false"
             android:theme="@style/Theme.DescargadorPro" />
 
+        <activity
+            android:name=".MusicBoxActivity"
+            android:exported="false"
+            android:theme="@style/Theme.DescargadorPro" />
+
         <service
             android:name=".MusicService"
             android:enabled="true"
